@@ -28,7 +28,7 @@ function App() {
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
   const [menu_class, setMenuClass] = useState("menu hidden")
   const [isMenuClicked, setIsMenuClicked] = useState(false)
-  const [navHeight , setNavheight] = useState("navsection")
+  const [navHeight, setNavheight] = useState("navsection")
 
   const sliderRef = useRef(null)
   console.log(sliderRef.current)
@@ -89,20 +89,23 @@ function App() {
     ]
   };
 
-  
+  const facebookLink = () => {
+  }
+
+
 
   const updateMenu = () => {
-      if(!isMenuClicked) {
-          setBurgerClass("burger-bar clicked")
-          setMenuClass("menu visible")
-          setNavheight("navsection navheight")
-        }
-        else {
-          setBurgerClass("burger-bar unclicked")
-          setMenuClass("menu hidden")
-          setNavheight("navsection")
-      }
-      setIsMenuClicked(!isMenuClicked)
+    if (!isMenuClicked) {
+      setBurgerClass("burger-bar clicked")
+      setMenuClass("menu visible")
+      setNavheight("navsection navheight")
+    }
+    else {
+      setBurgerClass("burger-bar unclicked")
+      setMenuClass("menu hidden")
+      setNavheight("navsection")
+    }
+    setIsMenuClicked(!isMenuClicked)
   }
 
   return (
@@ -124,7 +127,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className={ navHeight}>
+        <div className={navHeight}>
           <div className="container">
             <div className='nav'>
               <img src={Logo} alt="Logo" />
@@ -428,11 +431,11 @@ function App() {
               <img src={Logo} alt="" />
               <div className='socialbutton'>
                 <h2>Socials</h2>
-                <button className='btn'><BiLogoFacebook /></button>
-                <button className='btn'><AiFillYoutube /></button>
-                <button className='btn'><BiLogoLinkedin /></button>
-                <button className='btn'><AiOutlineInstagram /></button>
-                <button className='btn'><AiOutlineTwitter /></button>
+                <a target='_blank' href="https://www.facebook.com" ><button className='btn socialmediabutton'><BiLogoFacebook /></button></a>
+                <a target='_blank' href="https://www.youtube.com" ><button className='btn socialmediabutton'><AiFillYoutube /></button></a>
+                <a target='_blank' href="https://www.linkedin.com" ><button className='btn socialmediabutton'><BiLogoLinkedin /></button></a>
+                <a target='_blank' href="https://www.instagram.com" ><button className='btn socialmediabutton'><AiOutlineInstagram /></button></a>
+                <a target='_blank' href="https://www.twitter.com" ><button className='btn socialmediabutton'><AiOutlineTwitter /></button></a>
               </div>
             </div>
             <div className='allcontact'>
