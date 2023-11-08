@@ -3,6 +3,7 @@ import './App.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// import { useNavigation } from "react-router-dom"
 
 import { AiOutlineMail, AiOutlineInstagram, AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai';
 import { BiLogoLinkedin, BiLogoFacebook } from 'react-icons/bi';
@@ -29,6 +30,7 @@ function App() {
   const [menu_class, setMenuClass] = useState("menu hidden")
   const [isMenuClicked, setIsMenuClicked] = useState(false)
   const [navHeight, setNavheight] = useState("navsection")
+  // const navigation = useNavigation();
 
   const sliderRef = useRef(null)
   console.log(sliderRef.current)
