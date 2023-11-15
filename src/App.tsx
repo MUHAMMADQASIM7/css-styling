@@ -30,6 +30,7 @@ function App() {
   const [menu_class, setMenuClass] = useState("menu hidden")
   const [isMenuClicked, setIsMenuClicked] = useState(false)
   const [navHeight, setNavheight] = useState("navsection")
+  const [burgerbutton , setBurgerbutton] = useState("")
   // const navigation = useNavigation();
 
   const sliderRef = useRef(null)
@@ -301,7 +302,7 @@ function App() {
         <div className="container">
           <div className='customsuitsectionh2'>
             <h2 >Your Suit Customize to your Taste</h2>
-            <h2>Your Suit Customize to your Comfort</h2>
+            <h2 className='visibilityabove'>Your Suit Customize to your Comfort</h2>
           </div>
           <div className="customsuit">
             <div className='top'>
@@ -313,6 +314,7 @@ function App() {
             <div className='middle'>
               <div className='taste3' ><p>Choose your own lining- from funky to Simple Colors</p></div>
               <div className='taste4' ><p>Choose Your Buttons - Functional, Non-Functional or Kissing /overlapping Buttons</p></div>
+              <h2 className='visibility600px'>Your Suit Customize to your Comfort</h2>
               <div className='comfort3' ><p>Half silk lining in the slack to give you comfort</p></div>
               <div className='comfort4' ><p>Elastic band on the inside waist side of slack to hold your shirts firmly</p></div>
             </div>

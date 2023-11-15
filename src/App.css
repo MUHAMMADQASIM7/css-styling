@@ -889,7 +889,7 @@ body {
 
   /* BannerSection */
   .banner {
-    height: 60vh;
+    height: 350px;
   }
 
   .banner div {
@@ -999,6 +999,12 @@ body {
   flex-direction: column;
   gap: 30px;
   align-items: center;
+}
+.visibilityabove {
+  display: none;
+}
+.visibility600px {
+  display: inherit;
 }
 
 .customsuit {
@@ -1168,7 +1174,7 @@ body {
   width: 300px;
   height: 225px;
 }
-@media only screen and (max-width:385px) {
+@media only screen and (max-width:450px) {
   .options {
     display: flex;
     flex-direction: column;
@@ -1181,6 +1187,58 @@ body {
     height: 100px;
   }
 }
+
+/* Quote-Section */
+
+.quoteslider {
+  width: 90%;
+  margin: auto;
+}
+.slick-slide img {
+      width: 57px;
+      height: 40px;
+}
+
+.quotehead {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quotetitle {
+  width: 400px;
+  margin: 40px 0;
+  font-size: larger;
+}
+
+
+.quotehead svg {
+  width: 30px;
+  height: 30px;
+
+}
+
+.quote {
+  width: 100%;
+
+}
+
+.quote p {
+  width: 100%;
+  display: block;
+font-size: small;
+}
+
+.linequote {
+  font-size: small;
+}
+
+.line {
+  width: 80px;
+}
+
+
 /* Footer-Secion */
 
 .divcenter {
@@ -1205,6 +1263,9 @@ body {
     font-size: small;
   }
   
+}
+.social img {
+  width: 230px;
 }
 .socialbutton {
   width: 150px;
@@ -1284,9 +1345,11 @@ body {
 
   .burgernavbutton {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     height: 100px;
+    position: absolute;
+    top: 230px;
 
   }
 
@@ -1323,7 +1386,7 @@ body {
 
   /* BannerSection */
   .banner {
-    height: 60vh;
+    height: 350px;
   }
 
   .banner div {
@@ -1422,9 +1485,16 @@ body {
 .customsuitsectionh2 {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 30px;
   align-items: center;
+  font-size: small;
+}
+.visibilityabove {
+  display: inherit;
+}
+.visibility600px {
+  display: none;
 }
 
 .customsuit {
@@ -1657,9 +1727,11 @@ width: 270px;
 
   .burgernavbutton {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     height: 100px;
+    position: absolute;
+    top: 230px;
 
   }
 
@@ -1696,7 +1768,7 @@ width: 270px;
 
   /* BannerSection */
   .banner {
-    height: 60vh;
+    height: 350px;
   }
 
   .banner div {
@@ -1798,7 +1870,9 @@ width: 270px;
   display: flex;
   justify-content: center;
   flex-direction: row;
+  font-size: medium;
 }
+
 
 .customsuit {
   display: flex;
@@ -2029,9 +2103,11 @@ width: 270px;
 
   .burgernavbutton {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     height: 100px;
+    position: absolute;
+    top: 230px;
 
   }
 
@@ -2068,7 +2144,7 @@ width: 270px;
 
   /* BannerSection */
   .banner {
-    height: 60vh;
+    height: 350px;
   }
 
   .banner div {
