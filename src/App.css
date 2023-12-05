@@ -91,7 +91,7 @@ body {
 
 .navheight {
   transition: all 0.5s ease-out;
-  height: 400px;
+  height: 350px;
 }
 
 .nav span {
@@ -105,7 +105,7 @@ body {
 }
 
 .nav img {
-  width: 200px;
+  width: 170px;
 }
 
 .bgred2 {
@@ -307,6 +307,7 @@ body {
 .heading {
   text-align: center;
   padding: 20px 0;
+  padding-bottom: 0;
 }
 
 .reasonsbutton {
@@ -623,11 +624,18 @@ body {
   width: 76%;
 
 }
+.quotepara {
+  display: flex;
+}
+.quotepara img{
+  width: 60px;
+  height: 50px;
+}
 
 .quote p {
   width: 100%;
   display: inline-block;
-
+margin-left: 10px;
 }
 
 .linequote {
@@ -674,6 +682,7 @@ body {
   height: 40px;
   color: #E1B137;
   margin: 0 -30px;
+
 }
 
 .allvideossection svg:hover {
@@ -703,11 +712,11 @@ body {
 .social {
   margin: 25px;
   padding: 20px;
-  width: 26%;
+  width: auto;
 }
 
 .social img {
-  width: 90%;
+  width: 300px;
 }
 
 .socialbutton {
@@ -809,6 +818,8 @@ body {
     flex-direction: row-reverse;
   }
 
+
+
   .burger-menu {
     color: #000000;
     height: 100%;
@@ -818,11 +829,11 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     cursor: pointer;
-    gap: 11px;
+    gap: 2px;
   }
 
   .burger-bar {
-    width: 3em;
+    width: 2.5em;
     height: 0.5em;
     background-color: gray;
     border-radius: 0.5em;
@@ -836,6 +847,9 @@ body {
     display: inherit;
   }
 
+  .nav img {
+    width: 140px;
+  }
 
   .navoptions {
     display: none;
@@ -867,7 +881,7 @@ body {
   /* ----- animations--------- */
   /* clicked */
   .burger-bar.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transform: rotate(45deg) translate(0.05em, 0.35em);
     transition: ease-out 0.5s;
   }
 
@@ -921,7 +935,7 @@ body {
   }
 
   .detail {
-    width: 300px;
+    width: 100%;
   }
 
   .detail h1 {
@@ -938,10 +952,10 @@ body {
     font-size: 10px;
   }
 
-   /* Testimonials-Section */
+  /* Testimonials-Section */
 
 
-   .testimonials {
+  .testimonials {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -955,325 +969,363 @@ body {
 
   .one {
     width: 100%;
-    height: 150px;
+    height: 200px;
   }
 
   .two {
     width: 100%;
-    height: 150px;
+    height: 200px;
   }
-   /* Reason-Section */
+
+  /* Reason-Section */
 
 
-.reasons {
-  margin: 40px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  .reasons {
+    margin: 40px 0;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 
-.topreason {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
+  .topreason {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
 
-.bottomreason {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 20px;
-}
+  .bottomreason {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+  }
 
-/* Custom-Suit-Section */
+  /* YTVideo Section */
 
-.customsuitsectionh2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
-}
-.visibilityabove {
-  display: none;
-}
-.visibility600px {
-  display: inherit;
-}
+  .ytvideo iframe {
+    width: 800px;
+    height: 270px;
+  }
 
-.customsuit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
+  /* Custom-Suit-Section */
 
+  .customsuitsectionh2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 
-.customsuit p {
-  color: white;
-  background: rgba(0, 0, 0, 0.445);
-  width: 230px;
-  height: 120px;
-  align-items: center;
-  display: flex;
-  margin: 20px;
-}
+  .visibilityabove {
+    display: none;
+  }
 
-.top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  width: 400px;
-}
+  .visibility600px {
+    display: inherit;
+  }
 
-.middle {
-  width: 400px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.bottom {
-  width: 400px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.taste1 {
-  background: url("image/Rectangle\ 18.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste2 {
-  background: url("image/Rectangle\ 19.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.comfort1 {
-  background: url("image/Rectangle\ 17-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left:0 ;
-}
-
-.comfort2 {
-  background: url("image/Rectangle\ 18-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste3 {
-  background: url("image/Rectangle\ 21.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste4 {
-  background: url("image/Rectangle\ 22.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.comfort3 {
-  background: url("image/Rectangle\ 20-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left:0 ;
-}
-
-.comfort4 {
-  background: url("image/Rectangle\ 21-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste5 {
-  background: url("image/Rectangle\ 17.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste6 {
-  background: url("image/Rectangle\ 20.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.comfort5 {
-  background: url("image/Rectangle\ 19-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left:0 ;
-}
-
-.comfort6 {
-  background: url("image/Rectangle\ 22-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-/* Process-Section */
-
-.process {
-  flex-direction: column;
-}
-.width {
-  margin-right: 0px;
-}
-
-.options {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
+  .customsuit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
 
 
-.optionsbox {
-  border: 1px solid #D8D8D8;
-  display: flex;
-  flex-direction: column;
-  width: 110px;
-  text-align: center;
-}
+  .customsuit p {
+    color: white;
+    background: rgba(0, 0, 0, 0.445);
+    width: 240px;
+    height: 140px;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+  }
 
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 400px;
+  }
 
-.suitstylingh3 {
-  border: 1px solid #D8D8D8;
-  background: #FCF5E3;
-  width: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 10px;
-}
-.optionboxno {
-  font-size: 70px;
-  -webkit-text-stroke: 1px #E1B137;
-  color: white;
-  
-}
+  .middle {
+    width: 400px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-.suitstyling iframe {
-  width: 300px;
-  height: 225px;
-}
-@media only screen and (max-width:450px) {
+  .bottom {
+    width: 400px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .taste1 {
+    background: url("image/Rectangle\ 18.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+  }
+
+  .taste2 {
+    background: url("image/Rectangle\ 19.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+  }
+
+  .comfort1 {
+    background: url("image/Rectangle\ 17-1.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+    margin-left: 0;
+  }
+
+  .comfort2 {
+    background: url("image/Rectangle\ 18-1.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+  }
+
+  .taste3 {
+    background: url("image/Rectangle\ 21.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+  }
+
+  .taste4 {
+    background: url("image/Rectangle\ 22.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+  }
+
+  .comfort3 {
+    background: url("image/Rectangle\ 20-1.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+    margin-left: 0;
+  }
+
+  .comfort4 {
+    background: url("image/Rectangle\ 21-1.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+  }
+
+  .taste5 {
+    background: url("image/Rectangle\ 17.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+  }
+
+  .taste6 {
+    background: url("image/Rectangle\ 20.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+  }
+
+  .comfort5 {
+    background: url("image/Rectangle\ 19-1.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+    margin-left: 0;
+  }
+
+  .comfort6 {
+    background: url("image/Rectangle\ 22-1.png") no-repeat center center/cover;
+    width: 70%;
+    height: 175px;
+  }
+
+  /* Process-Section */
+
+  .process {
+    flex-direction: column;
+  }
+
+  .width {
+    margin-right: 0px;
+  }
+
   .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+
+  .optionsbox {
+    border: 1px solid #D8D8D8;
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    text-align: center;
+  }
+
+
+  .suitstylingh3 {
+    border: 1px solid #D8D8D8;
+    background: #FCF5E3;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .optionboxno {
+    font-size: 70px;
+    -webkit-text-stroke: 1px #E1B137;
+    color: white;
+    padding: 5px;
+  }
+  .textsize {
+    font-size: small;
+    padding: 2px;
+  }
+
+  .suitstyling iframe {
+    width: 355px; 
+    height: 225px;
+  }
+
+  @media only screen and (max-width:450px) {
+    .options {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .optionsbox {
+      width: 200px;
+    }
+
+    .suitstylingh3 {
+      width: 200px;
+      height: 100px;
+    }
+  }
+
+  /* Quote-Section */
+
+  .quoteslider {
+    width: 90%;
+    margin: auto;
+  }
+
+  .slick-slide img {
+    width: 57px;
+    height: 40px;
+  }
+
+  .quotehead {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .quotetitle {
+    width: 400px;
+    margin: 40px 0;
+    font-size: larger;
+  }
+
+
+  .quotehead svg {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .quote {
+    width: 100%;
+
+  }
+
+  .quote p {
+    width: 100%;
+    display: block;
+    font-size: small;
+  }
+
+  .linequote {
+    font-size: small;
+  }
+
+  .line {
+    width: 80px;
+  }
+   /* YtVideos */
+   .allvideossection iframe {
+    width: 100%;
+  }
+  @media only screen and (max-width:480px) {
+     /* YtVideos */
+  .allvideossection iframe {
+    width: 100%;
+  }
+  }
+
+
+  /* Footer-Secion */
+
+  .divcenter {
     display: flex;
     flex-direction: column;
   }
-  .optionsbox {
-    width: 200px;
-  }
-  .suitstylingh3 {
-    width: 200px;
-    height: 100px;
-  }
-}
 
-/* Quote-Section */
-
-.quoteslider {
-  width: 90%;
-  margin: auto;
-}
-.slick-slide img {
-      width: 57px;
-      height: 40px;
-}
-
-.quotehead {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.quotetitle {
-  width: 400px;
-  margin: 40px 0;
-  font-size: larger;
-}
-
-
-.quotehead svg {
-  width: 30px;
-  height: 30px;
-
-}
-
-.quote {
-  width: 100%;
-
-}
-
-.quote p {
-  width: 100%;
-  display: block;
-font-size: small;
-}
-
-.linequote {
-  font-size: small;
-}
-
-.line {
-  width: 80px;
-}
-
-
-/* Footer-Secion */
-
-.divcenter {
-  display: flex;
-  flex-direction: column;
-}
-
-.tagmark {
-  background-color: black;
-  color: white;
-  width: 100%;
-  height: 60px;
-}
-@media only screen and (max-width:400px) {
   .tagmark {
-    height: 25px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 60px;
   }
-  .tagmark span{
-    display: none;
+
+  @media only screen and (max-width:400px) {
+    .tagmark {
+      height: 25px;
+    }
+
+    .tagmark span {
+      display: none;
+    }
+
+    .tagmarkcontent {
+      font-size: small;
+    }
+
   }
-  .tagmarkcontent {
-    font-size: small;
+
+  .social img {
+    width: 230px;
   }
-  
-}
-.social img {
-  width: 230px;
-}
-.socialbutton {
-  width: 150px;
-}
-.details {
-  width: 250px;
-  margin: 20px;
-}
+
+  .socialbutton {
+    width: 150px;
+  }
+
+  .details {
+    width: 250px;
+    margin: 20px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -1290,6 +1342,7 @@ font-size: small;
 
   @media only screen and (max-width: 640px) {
 
+
     .contactdetail {
       display: none;
     }
@@ -1304,17 +1357,17 @@ font-size: small;
   .burger-menu {
     color: #000000;
     height: 100%;
-    width: 2.5em;
+    width: 1.5em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     cursor: pointer;
-    gap: 11px;
+    gap: 2px;
   }
 
   .burger-bar {
-    width: 3em;
+    width: 2.5em;
     height: 0.5em;
     background-color: gray;
     border-radius: 0.5em;
@@ -1328,13 +1381,40 @@ font-size: small;
     display: inherit;
   }
 
+  .nav img {
+    width: 170px;
+  }
 
   .navoptions {
     display: none;
   }
 
   .navbutton {
-    display: none;
+    display: inherit;
+    position: absolute;
+    right: 80px;
+  }
+
+  .bgred2 {
+    background: red;
+    color: white;
+    height: 28px;
+    width: 155px;
+    border: 0;
+    border-radius: 66px;
+    padding: 2px 10px;
+    font-size: 0.6rem;
+  }
+
+  .whitebd2 {
+    background-color: white;
+    color: red;
+    height: 28px;
+    width: 139px;
+    border: 1px solid red;
+    border-radius: 66px;
+    margin-left: 5px;
+    font-size: 0.6rem;
   }
 
   .burgernavoptions {
@@ -1364,7 +1444,7 @@ font-size: small;
   /* ----- animations--------- */
   /* clicked */
   .burger-bar.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transform: rotate(45deg) translate(0.05em, 0.35em);
     transition: ease-out 0.5s;
   }
 
@@ -1452,237 +1532,265 @@ font-size: small;
     width: 100%;
     height: 150px;
   }
-   /* Reason-Section */
+
+  /* Reason-Section */
 
 
-.reasons {
-  margin: 40px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+  .reasons {
+    margin: 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
 
-.topreason {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
+  .topreason {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
 
-.bottomreason {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 20px;
-}
-/* Custom-Suit-Section */
+  .bottomreason {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+  }
 
-.customsuitsectionh2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
-  font-size: small;
-}
-.visibilityabove {
-  display: inherit;
-}
-.visibility600px {
-  display: none;
-}
+  /* YTVideo Section */
 
-.customsuit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
+  .ytvideo iframe {
+    width: 800px;
+    height: 360px;
+  }
 
+  /* Custom-Suit-Section */
 
-.customsuit p {
-  color: white;
-  background: rgba(0, 0, 0, 0.445);
-  width: 230px;
-  height: 120px;
-  align-items: center;
-  display: flex;
-  margin: 20px;
-}
+  .customsuitsectionh2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    font-size: small;
+  }
 
-.top {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 500px;
-}
+  .visibilityabove {
+    display: inherit;
+  }
 
-.middle {
-  width: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+  .visibility600px {
+    display: none;
+  }
 
-.bottom {
-  width: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.taste1 {
-  background: url("image/Rectangle\ 18.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste2 {
-  background: url("image/Rectangle\ 19.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.comfort1 {
-  background: url("image/Rectangle\ 17-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left:0 ;
-}
-
-.comfort2 {
-  background: url("image/Rectangle\ 18-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste3 {
-  background: url("image/Rectangle\ 21.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste4 {
-  background: url("image/Rectangle\ 22.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.comfort3 {
-  background: url("image/Rectangle\ 20-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left:0 ;
-}
-
-.comfort4 {
-  background: url("image/Rectangle\ 21-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste5 {
-  background: url("image/Rectangle\ 17.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste6 {
-  background: url("image/Rectangle\ 20.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.comfort5 {
-  background: url("image/Rectangle\ 19-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left:0 ;
-}
-
-.comfort6 {
-  background: url("image/Rectangle\ 22-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-/* Process-Section */
-
-.process {
-  flex-direction: column;
-}
-.width {
-  margin-right: 0px;
-}
-
-.options {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.optionsbox {
-  border: 1px solid #D8D8D8;
-  display: flex;
-  flex-direction: column;
-  width: 160px;
-  text-align: center;
-}
+  .customsuit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
 
 
-.suitstylingh3 {
-  border: 1px solid #D8D8D8;
-  background: #FCF5E3;
-  width: 160px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.optionboxno {
-  font-size: 100px;
-  -webkit-text-stroke: 1px #E1B137;
-  color: white;
+  .customsuit p {
+    color: white;
+    background: rgba(0, 0, 0, 0.445);
+    width: 230px;
+    height: 120px;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+  }
 
-}
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 450px;
+  }
 
-.suitstyling iframe {
-  width: 500px;
-  height: 335px;
-}
+  .middle {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-/* Footer-Secion */
+  .bottom {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-.divcenter {
-  display: flex;
-  flex-direction: column;
-}
-.tagmark {
-  background-color: black;
-  color: white;
-  width: 100%;
-  height: 60px;
-}
-.socialbutton {
-width: 270px;
-}
-.details {
-  width: 400px;
-  margin: 25px;
-}
+  .taste1 {
+    background: url("image/Rectangle\ 18.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .taste2 {
+    background: url("image/Rectangle\ 19.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .comfort1 {
+    background: url("image/Rectangle\ 17-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+    margin-left: 0;
+  }
+
+  .comfort2 {
+    background: url("image/Rectangle\ 18-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .taste3 {
+    background: url("image/Rectangle\ 21.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .taste4 {
+    background: url("image/Rectangle\ 22.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .comfort3 {
+    background: url("image/Rectangle\ 20-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+    margin-left: 0;
+  }
+
+  .comfort4 {
+    background: url("image/Rectangle\ 21-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .taste5 {
+    background: url("image/Rectangle\ 17.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .taste6 {
+    background: url("image/Rectangle\ 20.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .comfort5 {
+    background: url("image/Rectangle\ 19-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+    margin-left: 0;
+  }
+
+  .comfort6 {
+    background: url("image/Rectangle\ 22-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  /* Process-Section */
+
+  .process {
+    flex-direction: column;
+  }
+
+  .width {
+    margin-right: 0px;
+  }
+
+  .options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .optionsbox {
+    border: 1px solid #D8D8D8;
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+  }
+  .textsize {
+    font-size: large;
+    padding: 2px;
+  }
+
+
+  .suitstylingh3 {
+    border: 1px solid #D8D8D8;
+    background: #FCF5E3;
+    width: 160px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .optionboxno {
+    font-size: 100px;
+    -webkit-text-stroke: 1px #E1B137;
+    color: white;
+
+  }
+
+  .suitstyling iframe {
+    width: 500px;
+    height: 335px;
+  }
+
+   /* YtVideos */
+   .allvideossection iframe {
+    width: 100%;
+  }
+
+  /* Footer-Secion */
+
+  .divcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tagmark {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 60px;
+  }
+
+  .socialbutton {
+    width: 270px;
+  }
+
+  .details {
+    width: 400px;
+    margin: 25px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+
   .burger-menu {
     color: #000000;
     height: 100%;
@@ -1692,11 +1800,11 @@ width: 270px;
     align-items: flex-start;
     justify-content: space-between;
     cursor: pointer;
-    gap: 11px;
+    gap: 2px;
   }
 
   .burger-bar {
-    width: 3em;
+    width: 2.5em;
     height: 0.5em;
     background-color: gray;
     border-radius: 0.5em;
@@ -1716,7 +1824,31 @@ width: 270px;
   }
 
   .navbutton {
-    display: none;
+    display: inherit;
+    position: absolute;
+    right: 100px;
+  }
+
+  .bgred2 {
+    background: red;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border: 0;
+    border-radius: 66px;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+  }
+
+  .whitebd2 {
+    background-color: white;
+    color: red;
+    height: 40px;
+    width: 175px;
+    border: 1px solid red;
+    border-radius: 66px;
+    margin-left: 5px;
+    font-size: 0.8rem;
   }
 
   .burgernavoptions {
@@ -1746,7 +1878,7 @@ width: 270px;
   /* ----- animations--------- */
   /* clicked */
   .burger-bar.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transform: rotate(45deg) translate(0.05em, 0.35em);
     transition: ease-out 0.5s;
   }
 
@@ -1836,225 +1968,243 @@ width: 270px;
     width: 157px;
     height: 115px;
   }
+
   /* Reason-Section */
 
 
-.reasons {
-  margin: 40px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+  .reasons {
+    margin: 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
 
-.topreason {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
+  .topreason {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
 
-.bottomreason {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 20px;
-}
-/* Custom-Suit-Section */
+  .bottomreason {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+  }
 
-.customsuitsectionh2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  font-size: medium;
-}
+  /* YTVideo Section */
 
+  .ytvideo iframe {
+    width: 800px;
+    height: 400px;
+  }
 
-.customsuit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
+  /* Custom-Suit-Section */
+
+  .customsuitsectionh2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: medium;
+  }
 
 
-.customsuit p {
-  color: white;
-  background: rgba(0, 0, 0, 0.445);
-  width: 230px;
-  height: 120px;
-  align-items: center;
-  display: flex;
-  margin: 20px;
-}
-
-.top {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 500px;
-}
-
-.middle {
-  width: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.bottom {
-  width: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.taste1 {
-  background: url("image/Rectangle\ 18.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste2 {
-  background: url("image/Rectangle\ 19.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.comfort1 {
-  background: url("image/Rectangle\ 17-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left:0 ;
-}
-
-.comfort2 {
-  background: url("image/Rectangle\ 18-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste3 {
-  background: url("image/Rectangle\ 21.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste4 {
-  background: url("image/Rectangle\ 22.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.comfort3 {
-  background: url("image/Rectangle\ 20-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left:0 ;
-}
-
-.comfort4 {
-  background: url("image/Rectangle\ 21-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste5 {
-  background: url("image/Rectangle\ 17.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.taste6 {
-  background: url("image/Rectangle\ 20.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-
-.comfort5 {
-  background: url("image/Rectangle\ 19-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left:0 ;
-}
-
-.comfort6 {
-  background: url("image/Rectangle\ 22-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-/* Process-Section */
-
-.process {
-  flex-direction: column;
-}
-
-.width {
-  margin-right: 20px;
-}
-
-.options {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.optionsbox {
-  border: 1px solid #D8D8D8;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  text-align: center;
-}
-
-.optionboxno {
-  font-size: 100px;
-  -webkit-text-stroke: 1px #E1B137;
-  color: white;
-
-}
-
-.options svg {
-  width: 16px;
-  height: 16px;
-  color: red;
-
-}
+  .customsuit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
 
 
-.suitstylingh3 {
-  border: 1px solid #D8D8D8;
-  background: #FCF5E3;
-  width: 200px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+  .customsuit p {
+    color: white;
+    background: rgba(0, 0, 0, 0.445);
+    width: 230px;
+    height: 120px;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+  }
+
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 500px;
+  }
+
+  .middle {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .bottom {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .taste1 {
+    background: url("image/Rectangle\ 18.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .taste2 {
+    background: url("image/Rectangle\ 19.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .comfort1 {
+    background: url("image/Rectangle\ 17-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+    margin-left: 0;
+  }
+
+  .comfort2 {
+    background: url("image/Rectangle\ 18-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .taste3 {
+    background: url("image/Rectangle\ 21.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .taste4 {
+    background: url("image/Rectangle\ 22.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .comfort3 {
+    background: url("image/Rectangle\ 20-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+    margin-left: 0;
+  }
+
+  .comfort4 {
+    background: url("image/Rectangle\ 21-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .taste5 {
+    background: url("image/Rectangle\ 17.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .taste6 {
+    background: url("image/Rectangle\ 20.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  .comfort5 {
+    background: url("image/Rectangle\ 19-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+    margin-left: 0;
+  }
+
+  .comfort6 {
+    background: url("image/Rectangle\ 22-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
+
+  /* Process-Section */
+
+  .process {
+    flex-direction: column;
+  }
+
+  .width {
+    margin-right: 20px;
+  }
+
+  .options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .optionsbox {
+    border: 1px solid #D8D8D8;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+  }
+  .textsize {
+    font-size: larger;
+    padding: 2px;
+  }
+
+  .optionboxno {
+    font-size: 100px;
+    -webkit-text-stroke: 1px #E1B137;
+    color: white;
+
+  }
+
+  .options svg {
+    width: 16px;
+    height: 16px;
+    color: red;
+
+  }
+
+
+  .suitstylingh3 {
+    border: 1px solid #D8D8D8;
+    background: #FCF5E3;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
 
 
-.suitstyling iframe {
-  width: 550px;
-  height: 350px;
-}
+  .suitstyling iframe {
+    width: 550px;
+    height: 350px;
+  }
 
-.tagmark {
-  background-color: black;
-  color: white;
-  width: 100%;
-  height: 40px;
-}
+  .tagmark {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 40px;
+  }
 
+   /* YtVideos */
+   .allvideossection iframe {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -2069,11 +2219,11 @@ width: 270px;
     align-items: flex-start;
     justify-content: space-between;
     cursor: pointer;
-    gap: 11px;
+    gap: 2px;
   }
 
   .burger-bar {
-    width: 3em;
+    width: 2.5em;
     height: 0.5em;
     background-color: gray;
     border-radius: 0.5em;
@@ -2092,7 +2242,31 @@ width: 270px;
   }
 
   .navbutton {
-    display: none;
+    display: inherit;
+    position: absolute;
+    right: 100px;
+  }
+
+  .bgred2 {
+    background: red;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border: 0;
+    border-radius: 66px;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+  }
+
+  .whitebd2 {
+    background-color: white;
+    color: red;
+    height: 40px;
+    width: 175px;
+    border: 1px solid red;
+    border-radius: 66px;
+    margin-left: 5px;
+    font-size: 0.8rem;
   }
 
   .burgernavoptions {
@@ -2122,7 +2296,7 @@ width: 270px;
   /* ----- animations--------- */
   /* clicked */
   .burger-bar.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transform: rotate(45deg) translate(0.05em, 0.35em);
     transition: ease-out 0.5s;
   }
 
@@ -2211,212 +2385,220 @@ width: 270px;
     width: 200px;
     height: 135px;
   }
+
   /* Reason-Section */
 
-.reasonsection {
-  background: #FCF9F8;
-  margin: 20px 0;
-}
+  .reasonsection {
+    background: #FCF9F8;
+    margin: 20px 0;
+  }
 
-.reasons {
-  margin: 40px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
+  .reasons {
+    margin: 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 
-.iconboderbox {
-  width: 283px;
-  height: 239px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .iconboderbox {
+    width: 283px;
+    height: 239px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.reasonicon {
-  border-radius: 100px;
-  background-color: rgb(255, 255, 255);
-  width: 150px;
-  height: 150px;
-  margin-bottom: 10px;
-}
+  .reasonicon {
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
 
-.reasonicon img {
-  margin: 41px;
-}
+  .reasonicon img {
+    margin: 41px;
+  }
 
-.heading {
-  text-align: center;
-  padding: 20px 0;
-}
+  .heading {
+    text-align: center;
+    padding: 20px 0;
+  }
 
-.reasonsbutton {
-  background-color: white;
-  color: red;
-  height: 48px;
-  width: 185px;
-  border: 1px solid red;
-  border-radius: 66px;
-  margin-bottom: 20px;
-}
+  .reasonsbutton {
+    background-color: white;
+    color: red;
+    height: 48px;
+    width: 185px;
+    border: 1px solid red;
+    border-radius: 66px;
+    margin-bottom: 20px;
+  }
 
-.topreason {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
+  .topreason {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
 
-.bottomreason {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 20px;
-}
+  .bottomreason {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+  }
 
-.reasonbuttondiv {
-  text-align: center;
-}
-/* Custom-Suit-Section */
+  .reasonbuttondiv {
+    text-align: center;
+  }
 
-.customsuitsectionh2 {
-  display: flex;
-  justify-content: center;
-  gap: 135px;
-  margin-bottom: 30px;
-}
+  /* Custom-Suit-Section */
 
-.customsuit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
+  .customsuitsectionh2 {
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+    margin-bottom: 30px;
+  }
+
+  .customsuit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
 
 
-.customsuit p {
-  color: white;
-  background: rgba(0, 0, 0, 0.445);
-  width: 230px;
-  height: 120px;
-  align-items: center;
-  display: flex;
-  margin: 20px;
-}
+  .customsuit p {
+    color: white;
+    background: rgba(0, 0, 0, 0.445);
+    width: 230px;
+    height: 120px;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+  }
 
-.top {
-  display: flex;
-  flex-direction: row ;
-  width: auto;
-  gap: 10px;
-}
+  .top {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 10px;
+  }
 
-.middle {
-  display: flex;
-  flex-direction: row ;
-  width: auto;
-  gap: 10px;
-}
+  .middle {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 10px;
+  }
 
-.bottom {
-  display: flex;
-  flex-direction: row ;
-  width: auto;
-  gap: 10px;
-}
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 10px;
+  }
 
-.taste1 {
-  background: url("image/Rectangle\ 18.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
+  .taste1 {
+    background: url("image/Rectangle\ 18.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
 
-.taste2 {
-  background: url("image/Rectangle\ 19.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
+  .taste2 {
+    background: url("image/Rectangle\ 19.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
 
-.comfort1 {
-  background: url("image/Rectangle\ 17-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left: 10px;
-}
+  .comfort1 {
+    background: url("image/Rectangle\ 17-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+    margin-left: 10px;
+  }
 
-.comfort2 {
-  background: url("image/Rectangle\ 18-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
+  .comfort2 {
+    background: url("image/Rectangle\ 18-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
 
-.taste3 {
-  background: url("image/Rectangle\ 21.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
+  .taste3 {
+    background: url("image/Rectangle\ 21.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
 
-.taste4 {
-  background: url("image/Rectangle\ 22.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
+  .taste4 {
+    background: url("image/Rectangle\ 22.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
 
-.comfort3 {
-  background: url("image/Rectangle\ 20-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left: 10px;
-}
+  .comfort3 {
+    background: url("image/Rectangle\ 20-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+    margin-left: 10px;
+  }
 
-.comfort4 {
-  background: url("image/Rectangle\ 21-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
+  .comfort4 {
+    background: url("image/Rectangle\ 21-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
 
-.taste5 {
-  background: url("image/Rectangle\ 17.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
+  .taste5 {
+    background: url("image/Rectangle\ 17.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
 
-.taste6 {
-  background: url("image/Rectangle\ 20.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
+  .taste6 {
+    background: url("image/Rectangle\ 20.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
 
-.comfort5 {
-  background: url("image/Rectangle\ 19-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-  margin-left: 10px;
-}
+  .comfort5 {
+    background: url("image/Rectangle\ 19-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+    margin-left: 10px;
+  }
 
-.comfort6 {
-  background: url("image/Rectangle\ 22-1.png") no-repeat center center/cover;
-  width: 220px;
-  height: 150px;
-}
-/* Process-Section */
+  .comfort6 {
+    background: url("image/Rectangle\ 22-1.png") no-repeat center center/cover;
+    width: 220px;
+    height: 150px;
+  }
 
-.process {
-  flex-direction: column;
-}
+  /* Process-Section */
 
-/* Footer-Secion */
+  .process {
+    flex-direction: column;
+  }
+   /* YtVideos */
+   .allvideossection iframe {
+    width: 100%;
+  }
 
-.divcenter {
-  display: flex;
-  flex-direction: row;
-}
+  /* Footer-Secion */
+
+  .divcenter {
+    display: flex;
+    flex-direction: row;
+  }
+
 
 }
 
@@ -2433,6 +2615,7 @@ width: 270px;
 
   .navbutton {
     display: flex;
+    position: inherit;
   }
 
   .navsection {
@@ -2518,130 +2701,135 @@ width: 270px;
     height: 155px;
   }
 
-/* Custom-Suit-Section */
+  /* Custom-Suit-Section */
 
-.customsuitsectionh2 {
-  display: flex;
-  justify-content: center;
-  gap: 135px;
-  margin-bottom: 30px;
-}
+  .customsuitsectionh2 {
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+    margin-bottom: 30px;
+  }
 
-.customsuit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
+  .customsuit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
 
 
-.customsuit p {
-  color: white;
-  background: rgba(0, 0, 0, 0.445);
-  width: 230px;
-  height: 140px;
-  align-items: center;
-  display: flex;
-  margin: 20px;
-}
+  .customsuit p {
+    color: white;
+    background: rgba(0, 0, 0, 0.445);
+    width: 230px;
+    height: 140px;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+  }
 
-.top {
-  display: flex;
-  gap: 10px;
-}
+  .top {
+    display: flex;
+    gap: 10px;
+  }
 
-.middle {
-  display: flex;
-  gap: 10px;
-}
+  .middle {
+    display: flex;
+    gap: 10px;
+  }
 
-.bottom {
-  display: flex;
-  gap: 10px;
-}
+  .bottom {
+    display: flex;
+    gap: 10px;
+  }
 
-.taste1 {
-  background: url("image/Rectangle\ 18.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-}
+  .taste1 {
+    background: url("image/Rectangle\ 18.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+  }
 
-.taste2 {
-  background: url("image/Rectangle\ 19.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-}
+  .taste2 {
+    background: url("image/Rectangle\ 19.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+  }
 
-.comfort1 {
-  background: url("image/Rectangle\ 17-1.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-  margin-left: 10px;
-}
+  .comfort1 {
+    background: url("image/Rectangle\ 17-1.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+    margin-left: 10px;
+  }
 
-.comfort2 {
-  background: url("image/Rectangle\ 18-1.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-}
+  .comfort2 {
+    background: url("image/Rectangle\ 18-1.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+  }
 
-.taste3 {
-  background: url("image/Rectangle\ 21.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-}
+  .taste3 {
+    background: url("image/Rectangle\ 21.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+  }
 
-.taste4 {
-  background: url("image/Rectangle\ 22.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-}
+  .taste4 {
+    background: url("image/Rectangle\ 22.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+  }
 
-.comfort3 {
-  background: url("image/Rectangle\ 20-1.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-  margin-left: 10px;
-}
+  .comfort3 {
+    background: url("image/Rectangle\ 20-1.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+    margin-left: 10px;
+  }
 
-.comfort4 {
-  background: url("image/Rectangle\ 21-1.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-}
+  .comfort4 {
+    background: url("image/Rectangle\ 21-1.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+  }
 
-.taste5 {
-  background: url("image/Rectangle\ 17.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-}
+  .taste5 {
+    background: url("image/Rectangle\ 17.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+  }
 
-.taste6 {
-  background: url("image/Rectangle\ 20.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-}
+  .taste6 {
+    background: url("image/Rectangle\ 20.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+  }
 
-.comfort5 {
-  background: url("image/Rectangle\ 19-1.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-  margin-left: 10px;
-}
+  .comfort5 {
+    background: url("image/Rectangle\ 19-1.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+    margin-left: 10px;
+  }
 
-.comfort6 {
-  background: url("image/Rectangle\ 22-1.png") no-repeat center center/cover;
-  width: 250px;
-  height: 160px;
-}
+  .comfort6 {
+    background: url("image/Rectangle\ 22-1.png") no-repeat center center/cover;
+    width: 250px;
+    height: 160px;
+  }
 
-/* Process-Section */
+  /* Process-Section */
 
-.process {
-  flex-direction: row;
-}
+  .process {
+    flex-direction: row;
+  }
+
+  /* YtVideos */
+  .allvideossection iframe {
+    width: 100%;
+  }
 
 }

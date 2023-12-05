@@ -30,7 +30,6 @@ function App() {
   const [menu_class, setMenuClass] = useState("menu hidden")
   const [isMenuClicked, setIsMenuClicked] = useState(false)
   const [navHeight, setNavheight] = useState("navsection")
-  const [burgerbutton , setBurgerbutton] = useState("")
   // const navigation = useNavigation();
 
   const sliderRef = useRef(null)
@@ -79,7 +78,7 @@ function App() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2
+          initialSlide: 2,
         }
       },
       {
@@ -92,8 +91,6 @@ function App() {
     ]
   };
 
-  const facebookLink = () => {
-  }
 
 
 
@@ -159,10 +156,6 @@ function App() {
                   <span>Brands & Fabrics</span>
                   <span>Gift Cards</span>
                   <span>Contact</span>
-                </div>
-                <div className='burgernavbutton'>
-                  <button className='bgred2 btn' >Limited Time Special Offer </button>
-                  <button className='whitebd2 btn' >Book Consultation Now</button>
                 </div>
               </div>
             </div>
@@ -338,25 +331,25 @@ function App() {
               <div className='options' >
                 <div className='optionsbox'>
                   <span className='optionboxno'>01</span>
-                  <h3>Get to Know You</h3>
+                  <h3 className='textsize'>Get to Know You</h3>
                 </div>
                 <div className='optionsbox'>
                   <span className='optionboxno'>02</span>
-                  <h3>Selection & Suggestion</h3>
+                  <h3 className='textsize'>Selection & Suggestion</h3>
                 </div>
                 <div className='optionsbox'>
                   <span className='optionboxno'>03</span>
-                  <h3>Get Measured</h3>
+                  <h3 className='textsize'>Get Measured</h3>
                 </div>
               </div >
               <div className="options">
                 <div className='optionsbox'>
                   <span className='optionboxno'>04</span>
-                  <h3>Get Styled</h3>
+                  <h3 className='textsize'>Get Styled</h3>
                 </div>
                 <div className='optionsbox'>
                   <span className='optionboxno'>05</span>
-                  <h3>Get Fitted</h3>
+                  <h3 className='textsize'>Get Fitted</h3>
                 </div>
                 <div className='suitstylingh3'> <h3 className="shun"> Styling up Shaun <br /> <span className='aerowicon'><BsArrowRightCircle /></span> Watch Now </h3>
                 </div>
@@ -383,16 +376,20 @@ function App() {
             <div className='quoteslider'>
               <Slider ref={sliderRef} {...settings2}>
                 <div className='quote'>
+                  <div className='quotepara'>
                   <img src={Quotecoma} alt="" />
                   <p>"I met the people behind Milan Tailors while shopping in Hong Kong and have been a happy customer for more than three years.Qaiser provide exceptional service, and quality products; I have purchased several suits and shirts and will keep shopping. Thank You!</p>
+                  </div>
                   <div className='linequote'>
                     <h1 className='line'></h1>
                     <h3 className='quoteowner'>By George Adamidis</h3>
                   </div>
                 </div>
                 <div className='quote'>
+                <div className='quotepara'>
                   <img src={Quotecoma} alt="" />
                   <p>"I met the people behind Milan Tailors while shopping in Hong Kong and have been a happy customer for more than three years.Qaiser provide exceptional service, and quality products; I have purchased several suits and shirts and will keep shopping. Thank You!</p>
+                  </div>
                   <div className='linequote'>
                     <h1 className='line'></h1>
                     <h3 className='quoteowner'>By George Adamidis</h3>
