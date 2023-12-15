@@ -1021,7 +1021,7 @@ margin-left: 10px;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    align-items: center;
+    align-items: center; 
   }
 
   .visibilityabove {
